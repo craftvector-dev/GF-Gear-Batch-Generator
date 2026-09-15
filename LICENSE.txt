@@ -1,0 +1,51 @@
+GF Gear Batch Generator - Free Beta Evaluation License 1.0
+2026-09-15
+
+Copyright (c) 2026 GF Gear Batch contributors. All rights reserved.
+Publisher: craftvector-dev (https://github.com/craftvector-dev)
+
+1. Scope
+This license covers the original Batch integration, user interface, packaging,
+and documentation distributed by this publisher. It does NOT cover GF Gear
+Generator or other third-party materials identified in THIRD_PARTY_NOTICES.md.
+Those materials, including modifications to vendor/gfgear.py and changes.patch,
+remain under their own BSD 3-Clause license. Nothing here restricts the rights
+that BSD 3-Clause independently grants in those materials.
+
+2. Free evaluation
+You may download, install, run, inspect, and privately modify this beta for
+non-commercial learning and evaluation. You may keep copies necessary for
+those purposes and report defects to the publisher. This permission has no
+fixed expiry for this released version, provided these terms are followed.
+It grants no right to a future version, paid product, or support service.
+
+3. Reserved rights
+Except for section 2 and rights that applicable law or GitHub's Terms of Service
+independently provide, you may not redistribute, sell, sublicense, or publicly
+publish the Batch-covered software or modified versions without the publisher's
+written permission. Commercial production and paid-service use of this beta
+are not licensed. Sharing a link to the official download is welcome.
+GitHub users' rights to view and fork public repository content through GitHub's
+functionality under its Terms of Service are not restricted by this license.
+This is a source-available evaluation license, not an open-source license.
+
+4. Third-party software and output
+You must obtain and comply with your own Autodesk Fusion license. This beta
+license does not expand Autodesk license rights, including Education restrictions.
+The publisher claims no ownership of the models you generate. This does not
+remove the non-commercial evaluation scope or third-party restrictions on use.
+No endorsement by Autodesk or GF Gear Generator's authors is implied.
+
+5. Beta limitations
+The software is experimental and provided "AS IS", without warranties to the
+extent permitted by applicable law. Save your work before testing and inspect
+generated geometry. No compatibility, manufacturing suitability, availability,
+or future feature is promised. To the extent legally permitted, contributors
+are not liable for loss resulting from use. Mandatory statutory rights and
+liability that cannot lawfully be excluded remain unaffected.
+
+Japanese summary (the English terms above control):
+Batch追加部分は非商用の学習・評価用に無料で使用・閲覧・私的改変できます。
+Batch部分の再配布・再販売・公開改変版・商用実務利用は別途許可が必要です。
+GitHub規約上の閲覧・Forkの権利、およびGF由来部分のBSDの権利は制限しません。
+生成モデルの所有権を主張しませんが、利用目的とFusion側の条件は別途適用されます。
