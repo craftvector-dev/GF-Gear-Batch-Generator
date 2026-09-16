@@ -1,22 +1,28 @@
 FusionのGF Gear Batch用CSVを作成してください。
-以下の希望から、平歯車の歯数・個数・寸法を決めてください。
+以下の希望から、歯車の種類・歯数・個数・寸法を決めてください。
 未指定の必須寸法は推測せず、先に私へ質問してください。
 
 出力仕様:
 - 最終回答はCSVだけ。説明文・表・コード・数式を混ぜない。
-- ヘッダーは name,module,teeth,pressure_angle,width,bore,quantity
-- 各行で7項目すべて指定。空欄や「同上」、単位文字は不可。
+- ヘッダーは name,module,teeth,pressure_angle,width,bore,quantity,gear_type,ring_thickness,helix_angle,handedness,rack_height
+- 各行で12項目すべて指定。空欄や「同上」、単位文字は不可。
+- gear_typeはspur（平）、internal（内歯）、helical（はすば）、double_helical（やまば）、internal_helical（内歯はすば）、internal_double_helical（内歯やまば）、rack（直線ラック）。
+- 内歯車はring_thickness（歯底から外周までの厚みmm）>0、bore=0。それ以外はring_thickness=0。
+- はすば・やまばはhelix_angleが0より大きく45度以下。handednessはrightまたはleft。モジュール・圧力角は正面（Radial）方式。
+- はすば以外はhelix_angle=0、handedness=right。やまばのwidthは両側を合わせた全幅。
+- ラックはrack_height（歯底からの台座高さmm）>0、bore=0。widthは厚さ、teethは歯数。それ以外はrack_height=0。
 - module/width/boreはmm、pressure_angleは度の半角数値。
 - teethは6～250の整数、quantityは1以上の整数。
 - moduleとwidthは正数、boreは0以上、pressure_angleは14.5～30。
-- 穴なしはbore=0。boreはGFの歯底径（module*(teeth-2.5)）未満。
+- 外歯車の穴なしはbore=0。外歯車のboreはGFの歯底径（module*(teeth-2.5)）未満。
 - nameは100文字以下。改行、制御文字、/、\、:を使わない。
 - 最大200行、合計1000個。名前にカンマを使う場合はCSVの二重引用符で囲む。
-- 平歯車のみ。配置・余白・高速コピーはツールの画面で別途指定する。
+- かさ歯車・ウォーム・斜歯ラック・非標準内歯車は未対応。配置・余白・高速コピーはツールの画面で別途指定する。
 - 噛み合わせを希望する場合は相手の歯数、モジュール、圧力角を確認する。
   ツールは歯車を離して配置し、噛み合う組立位置には配置しない。
 
 私の希望:
-モジュール1、圧力角20度、歯幅8mm、穴径5mm。
-12歯を2個、20歯を4個。名前はGear12、Gear20。
+共通でモジュール1、圧力角20度、幅8mm。
+内歯車40歯を1個（外周厚み3mm・穴径0）、はすば20歯を2個（ねじれ20度・右・穴径5mm）、直線ラック12歯を1個（台座高さ5mm・穴径0）。
+名前はRing40、Helix20、Rack12。
 （この「私の希望」を作りたい歯車に書き換えてください。）
