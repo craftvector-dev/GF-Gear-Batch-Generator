@@ -1,4 +1,6 @@
-# 歯車の種類（v0.5.0）
+# 歯車の種類（v0.5.0以降）
+
+v0.6.0のDカット穴・キー溝と17列CSVは[BORE_INPUT.md](BORE_INPUT.md)を参照してください。
 
 Fusion 2705.1.15で7種類15個の生成を確認しました。条件と未確認事項は[MULTITYPE_TEST_RESULTS.md](MULTITYPE_TEST_RESULTS.md)を参照してください。
 

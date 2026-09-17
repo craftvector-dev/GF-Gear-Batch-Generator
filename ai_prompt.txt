@@ -4,8 +4,8 @@ FusionのGF Gear Batch用CSVを作成してください。
 
 出力仕様:
 - 最終回答はCSVだけ。説明文・表・コード・数式を混ぜない。
-- ヘッダーは name,module,teeth,pressure_angle,width,bore,quantity,gear_type,ring_thickness,helix_angle,handedness,rack_height
-- 各行で12項目すべて指定。空欄や「同上」、単位文字は不可。
+- ヘッダーは name,module,teeth,pressure_angle,width,bore,quantity,gear_type,ring_thickness,helix_angle,handedness,rack_height,bore_type,d_flat_depth,key_width,key_depth,bore_angle
+- 各行で17項目すべて指定。空欄や「同上」、単位文字は不可。
 - gear_typeはspur（平）、internal（内歯）、helical（はすば）、double_helical（やまば）、internal_helical（内歯はすば）、internal_double_helical（内歯やまば）、rack（直線ラック）。
 - 内歯車はring_thickness（歯底から外周までの厚みmm）>0、bore=0。それ以外はring_thickness=0。
 - はすば・やまばはhelix_angleが0より大きく45度以下。handednessはrightまたはleft。モジュール・圧力角は正面（Radial）方式。
@@ -15,6 +15,11 @@ FusionのGF Gear Batch用CSVを作成してください。
 - teethは6～250の整数、quantityは1以上の整数。
 - moduleとwidthは正数、boreは0以上、pressure_angleは14.5～30。
 - 外歯車の穴なしはbore=0。外歯車のboreはGFの歯底径（module*(teeth-2.5)）未満。
+- bore_typeはround（丸穴、穴なしもこれ）、d（Dカット穴）、keyway（丸穴＋キー溝）。D穴・キー溝は外歯車のみ、bore>0。
+- D穴のd_flat_depthは丸の外周から平面までの内向き切り込み量mm。0より大きくbore/2未満。それ以外は0。
+- キー溝のkey_widthは溝幅mm（0より大きくbore未満）、key_depthは丸穴外周から外向きの深さmm（正数）。それ以外は両方0。
+- キー溝は穴側の溝です。軸側の深さ・規格・はめあいを自動推定しない。溝の外側角 sqrt((key_width/2)^2+(bore/2+key_depth)^2) が歯底半径未満になること。
+- bore_angleは穴の平面／溝の向き。0度でローカル+Y、+Z側から見て反時計回り。roundでは0。D穴とキー溝は歯幅を貫通する。
 - nameは100文字以下。改行、制御文字、/、\、:を使わない。
 - 最大200行、合計1000個。名前にカンマを使う場合はCSVの二重引用符で囲む。
 - かさ歯車・ウォーム・斜歯ラック・非標準内歯車は未対応。配置・余白・高速コピーはツールの画面で別途指定する。
@@ -23,6 +28,6 @@ FusionのGF Gear Batch用CSVを作成してください。
 
 私の希望:
 共通でモジュール1、圧力角20度、幅8mm。
-内歯車40歯を1個（外周厚み3mm・穴径0）、はすば20歯を2個（ねじれ20度・右・穴径5mm）、直線ラック12歯を1個（台座高さ5mm・穴径0）。
-名前はRing40、Helix20、Rack12。
+平歯車20歯を2個（D穴・丸径5mm・切り込み0.5mm・向き0度）、はすば24歯を1個（ねじれ20度・右・丸穴6mm＋キー溝幅2mm・深さ1mm・向き90度）、内歯車40歯を1個（外周厚み3mm・穴径0）。
+名前はD20、Key24、Ring40。
 （この「私の希望」を作りたい歯車に書き換えてください。）
