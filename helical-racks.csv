@@ -1,0 +1,4 @@
+name,module,teeth,pressure_angle,width,bore,quantity,gear_type,ring_thickness,helix_angle,handedness,rack_height,bore_type,d_flat_depth,key_width,key_depth,bore_angle
+RackHelixR,2,30,20,15,0,1,helical_rack,0,25,right,3.5,round,0,0,0,0
+RackDoubleR,2,30,20,15,0,3,double_helical_rack,0,25,right,3.5,round,0,0,0,0
+RackDoubleL,2,30,20,15,0,3,double_helical_rack,0,25,left,3.5,round,0,0,0,0

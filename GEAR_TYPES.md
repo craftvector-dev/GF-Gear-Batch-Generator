@@ -13,6 +13,10 @@ Fusion 2705.1.15で7種類15個の生成を確認しました。条件と未確�
 | Internal Helical Gear | internal_helical | 内歯はすば。Ring、HA、方向を指定、Bore=0 |
 | Internal Double Helical Gear | internal_double_helical | 内歯やまば。Ring、HA、方向を指定、Bore=0。Wは全幅 |
 | Rack | rack | 直線ラック。歯数、W=厚さ、Base=歯底からの台座高さ、Bore=0 |
+| Helical Rack | helical_rack | はすばラック。HA、方向、Base、Bore=0 |
+| Double Helical Rack | double_helical_rack | やまばラック。Wは全幅。HA、方向、Base、Bore=0 |
+
+v0.7.0のラック追加と実行未確認事項は[RACK_INPUT.md](RACK_INPUT.md)を参照してください。
 
 ## 画面から入力
 
@@ -52,4 +56,4 @@ rightはZの増加に伴いXY角度が正方向へ進むねじれ、leftは逆�
 
 ## 未対応
 
-かさ歯車、ウォーム、斜歯ラック、非標準内歯車、転位歯車、Normal方式。
+かさ歯車、ウォーム、非標準内歯車、転位歯車、Normal方式。
